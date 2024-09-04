@@ -17,6 +17,65 @@ body {
     background: rgb(225, 255, 143);
     position: relative;
 
+    &__star {
+        position: absolute;
+
+        &-two {
+            left: 63px;
+            top: 94px;
+        }
+    
+        &-three {
+            left: 156px;
+            top: 69px;
+        }
+
+        &-four {
+            left: 1013px;
+            top: 568px;
+        }
+
+        &-five {
+            left: 948px;
+            top: 538px;
+        }
+
+    }
+
+    &__vector {
+        position: absolute;
+
+        &-one {
+            left: 854px;
+            top: -10px;
+        }
+
+        &-two {
+            left: 1030px;
+            top: -10px;
+        }
+
+        &-three {
+            left: 1067px;
+            top: 254px;
+        }
+
+        &-four {
+            left: 1225px;
+            top: 379px;
+        }
+
+        &-five {
+            left: 1247px;
+            top: 468px;
+        }
+
+        &-six {
+            left: 1345px;
+            top: 663px;
+        }
+    }
+
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
