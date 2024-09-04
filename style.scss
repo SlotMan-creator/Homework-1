@@ -2,3 +2,64 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    height: 800px;
+    background: rgb(225, 255, 143);
+    position: relative;
+
+    &__title {
+        color: rgb(32, 32, 39);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 769px;
+        padding-top: 196px;
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 720px;
+        margin-top: 24px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        width: 247px;
+        height: 66px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 48px;
+
+        &:hover {
+            color: rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+            transition: all 1.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
