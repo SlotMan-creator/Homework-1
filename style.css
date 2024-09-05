@@ -98,7 +98,6 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 142%;
-  letter-spacing: 0%;
   text-align: center;
   margin-top: 48px;
 }
@@ -156,6 +155,22 @@ body {
        column-gap: 32px;
   width: 1201px;
   flex-wrap: wrap;
+}
+.about-games__items-one {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.about-games__items-two {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.about-games__items-three {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  justify-content: space-between;
 }
 .about-games__link {
   text-decoration: none;
