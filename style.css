@@ -83,7 +83,11 @@ body {
   width: 720px;
   margin-top: 24px;
 }
+.header__text-span {
+  font-weight: 600;
+}
 .header__button {
+  font: inherit;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -104,4 +108,99 @@ body {
   transition: all 1.3s;
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.about-games {
+  height: 1470px;
+  background: rgb(32, 32, 39);
+}
+.about-games__img {
+  position: absolute;
+}
+.about-games__img-one {
+  left: 1020px;
+  top: 880px;
+}
+.about-games__img-two {
+  left: 45px;
+  top: 1622px;
+  transform: rotate(5deg);
+}
+.about-games__img-three {
+  left: 28px;
+  top: 1570px;
+  transform: rotate(5deg);
+}
+.about-games__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 94px;
+}
+.about-games__text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+.about-games__items {
+  margin-top: 72px;
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  width: 1201px;
+  flex-wrap: wrap;
+}
+.about-games__link {
+  text-decoration: none;
+}
+.about-games__card {
+  width: 378px;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.about-games__card:hover {
+  transition: all 1.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.about-games__card-three {
+  position: absolute;
+}
+.about-games__card-img {
+  border-radius: 30px;
+}
+.about-games__card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 32px 32px 36px 32px;
+}
+.about-games__card-desc-number {
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
+  border-radius: 52px;
+  background: rgb(247, 247, 247);
+  padding: 8px 16px 10px 16px;
+  width: 108px;
+}
+.about-games__card-desc-title {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
