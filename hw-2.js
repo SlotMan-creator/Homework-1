@@ -81,7 +81,7 @@ let ageTwo = Number(20);
 let isAdmin = Boolean(true);
 
 const user = {
-    name: Alexandr,
+    name: 'Alexandr',
     ageTwo:20,
     isAdmin: true
 }
