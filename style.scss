@@ -28,7 +28,7 @@ body {
         line-height: 78px;
         letter-spacing: 0px;
         text-align: left;
-        width: 769px;
+        max-width: 769px;
         padding-top: 196px;
     }
 
@@ -39,7 +39,7 @@ body {
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
-        width: 720px;
+        max-width: 720px;
         margin-top: 24px;
 
         &-span {
