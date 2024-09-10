@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: 700px;
+        background-image: url(./img/BGI_mobile.svg);
+        background-position: left 38px top -103px;
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+            width: 262px;
+            padding-top: 147px;
+        }
+
+        &__text {
+            width: 296px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        &__button {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            pointer-events: none;
+        }
+    }
+
+    .about-games {
+        display: none;
+    }
+}
