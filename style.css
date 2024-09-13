@@ -192,6 +192,8 @@ body {
   height: 500px;
   display: flex;
   flex-wrap: wrap;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
 }
 .mini-games__card-one {
   flex-direction: row-reverse;
@@ -240,7 +242,6 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 142%;
-  letter-spacing: 0%;
   text-align: center;
 }
 .mini-games__card-desc-btn:hover {
