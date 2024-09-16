@@ -313,4 +313,31 @@ body {
   .mini-games__card {
     height: auto;
   }
+  .mini-games__card-img {
+    width: 343px;
+  }
+  .mini-games__card-desc {
+    height: auto;
+  }
+  .mini-games__card-desc-title {
+    font-size: 32px;
+    line-height: 39px;
+    padding-bottom: 16px;
+  }
+  .mini-games__card-desc-text {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 32px;
+  }
+  .mini-games__card-desc-btn {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .mini-games__card-desc-wrapper {
+    padding: 29px;
+  }
+  .footer {
+    height: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
