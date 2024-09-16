@@ -55,7 +55,7 @@ console.log(Number(a) + Number(b));
 
 // TaskFive
 
-let monthNumber = 12;
+let monthNumber = Number(prompt('Введите номер месяца'));
 switch (monthNumber) {
     case 1:
         console.log('Этот месяц принадлежит к сезону "Зима"');
