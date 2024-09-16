@@ -37,4 +37,22 @@
     .about-games {
         display: none;
     }
+
+    .mini-games {
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        &__items {
+            gap: 24px;
+        }
+
+        &__card {
+            height: auto;
+        }
+    }
+
 }
