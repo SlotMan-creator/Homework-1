@@ -39,6 +39,7 @@
     }
 
     .mini-games {
+        padding-bottom: 48px;
         &__title {
             font-size: 40px;
             line-height: 49px;
@@ -58,7 +59,7 @@
             }
 
             &-desc {
-                height: auto;
+                 height: auto;
                 &-title {
                     font-size: 32px;
                     line-height: 39px;
