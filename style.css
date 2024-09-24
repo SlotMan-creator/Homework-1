@@ -195,6 +195,10 @@ body {
   background: rgb(255, 255, 255);
   border-radius: 30px;
 }
+.mini-games__card-img {
+  max-width: 100%;
+  min-width: none;
+}
 .mini-games__card-one {
   flex-direction: row-reverse;
 }
@@ -315,9 +319,6 @@ body {
   }
   .mini-games__card {
     height: auto;
-  }
-  .mini-games__card-img {
-    width: 343px;
   }
   .mini-games__card-desc {
     height: auto;

@@ -219,6 +219,11 @@ body {
         background: rgb(255, 255, 255);
         border-radius: 30px;
 
+        &-img {
+            max-width: 100%;
+            min-width: none;
+        }
+
         &-one {
             flex-direction: row-reverse;
         }
