@@ -38,27 +38,21 @@ for (const key in obj) {
 
 let n = 1000;
 let num = 0
-while (n > 50) {
+while (n >= 50) {
     n /=2;
     num++;
     console.log(n);
-    console.log(num);
 }
+
+console.log(`Количество циклов: ${num}`);
 
 // TaskSix
 
-for (let numberFriday = 1; numberFriday <=5; numberFriday++) {
-    if (numberFriday ===1) {
-        console.log('Сегодня пятница,первое число.Необходимо подготовить отчет');
-    } else if (numberFriday ===2) {
-        console.log('Сегодня пятница,восьмое число.Необходимо подготовить отчет');
-    } else if (numberFriday ===3) {
-        console.log('Сегодня пятница,пятнадцатое число.Необходимо подготовить отчет');
-    } else if (numberFriday ===4) {
-        console.log('Сегодня пятница,двадцать второе число.Необходимо подготовить отчет');
-    } else if (numberFriday ===5) {
-        console.log('Сегодня пятница,двадцать девятое число.Необходимо подготовить отчет');
-    }
-}
+let numberFriday = 1;
 
-// Так ли я понял шестую задачу или же все-таки что-то здесь по другому?)
+let allDay = 31;
+
+for (let i = numberFriday; i <= allDay; i +=7)
+        console.log(`Сегодня пятница, ${i}-e число.Необходимо подготовить отчет`);
+
+
