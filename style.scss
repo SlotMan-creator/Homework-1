@@ -73,14 +73,14 @@ body {
 }
 
 .about-games {
-    height: 1470px;
+    padding-bottom: 50px;
     background: rgb(32, 32, 39);
     background-image: url(./img/BGI_block2.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: left 25px top 77px;
 
-    
+
     &__title {
         color: rgb(255, 255, 255);
         font-size: 64px;
@@ -107,6 +107,7 @@ body {
         column-gap: 32px;
         width: 1201px;
         flex-wrap: wrap;
+
 
         &-one {
             display: flex;
@@ -182,6 +183,127 @@ body {
                 text-align: left;
             }
         }
+    }
+
+}
+
+.mini-games {
+    background: rgb(32, 32, 39);
+    background-image: url(./img/BGI_block3.svg);
+    padding-bottom: 144px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right 45px top 93px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    &__card {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        background: rgb(255, 255, 255);
+        border-radius: 30px;
+
+        &-img {
+            max-width: 100%;
+            min-width: none;
+        }
+
+        &-one {
+            flex-direction: row-reverse;
+        }
+
+        &-three {
+            flex-direction: row-reverse;
+        }
+
+        &-five {
+            flex-direction: row-reverse;
+        }
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            background: rgb(255, 255, 255);
+            height: 500px;
+            width: 600px;
+
+            &-wrapper {
+                padding: 48px;
+            }
+
+            &-title {
+                color: rgb(32, 32, 39);
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 59px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-bottom: 24px;
+            }
+
+            &-text {
+                color: rgb(32, 32, 39);
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-bottom: 36px;
+            }
+
+            &-btn {
+                width: 247px;
+                height: 66px;
+                border-radius: 60px;
+                background: rgb(32, 32, 39);
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 142%;
+                text-align: center;
+
+                &:hover {
+                    background: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                    transition: all 1.3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: #BDED35;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
     }
 
 }
