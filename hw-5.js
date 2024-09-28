@@ -1,10 +1,34 @@
 // GameOneGuessTheNumber
 
+// Описание игры для сайта («Угадай число»)
+// Создайте игру, в которой пользователь пытается угадать случайное число от 1 до 100.
+
+// Требования:
+
+// Сгенерируйте случайное число от 1 до 100.
+// Предложите пользователю угадать это число.
+// Дайте подсказки: больше или меньше загаданное число.
+// Завершите игру, когда пользователь угадает число.
+
 function getRandomInRage(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function guessTheNumber() {
+    let number = prompt('Введите число от 1 до 100');
+    if (number === getRandomInRage) {
+        alert('Вы угадали число!Поздравляю!')
+    } else if (number < getRandomInRage) {
+        alert('Больше!')
+    } else if (number > getRandomInRage) {
+        alert('Меньше!')
+    }
+
+}
+
+
 console.log(getRandomInRage(1, 100));
+guessTheNumber();
 
 
 // Задание 1
