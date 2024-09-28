@@ -178,6 +178,31 @@ console.log(cubing('3'));
 // getPerimeter
 // , который возвращает периметр окружности.
 
+function getCircleArea() {
+    return `Площадь круга составляет ${this.radius ** 2 * Math.PI * 2}`;
+}
+
+function getCirclePerimeter() {
+    return `Длина окружности составляет ${this.radius * 2 * Math.PI}`;
+}
+
+const circle1 = {
+    radius: 20,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter
+}
+
+const circle2 = {
+    radius: 10,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter
+}
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
+
 
 
 
