@@ -221,8 +221,9 @@ body {
 
         &-img {
             max-width: 100%;
-            min-width: none;
+            min-width: 10%;
         }
+
 
         &-one {
             flex-direction: row-reverse;
