@@ -10,31 +10,24 @@
 // Дайте подсказки: больше или меньше загаданное число.
 // Завершите игру, когда пользователь угадает число.
 
-// function getRandomInRage(min, max) {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-
-// как я понял,нужно придумать(сгенерировать) случайное число,а не сгенерировать
-// это число с помощью функции генератора случайных чисел,поэтому,закомментирую эту функцию
+let getRandomInRage = Math.floor(Math.random() * 100) + 1;
 
 function guessTheNumber() {
     while (true) {
         const number = prompt('Введите число от 1 до 100');
         let userNumber = Number(number);
 
-        // Генерирую случайное число от себя,без помощи генератора случайных чисел js
-
-        if (userNumber < 78) {
+        if (userNumber < getRandomInRage) {
             alert('Больше!');
             continue;
         }
 
-        if (userNumber > 78) {
+        if (userNumber > getRandomInRage) {
             alert('Меньше!');
             continue;
         }
 
-        if (userNumber === 78) {
+        if (userNumber === getRandomInRage) {
             alert('Вы угадали число!Поздравляю!')
             break;
         }
@@ -42,7 +35,7 @@ function guessTheNumber() {
     }
 }
 
-// console.log(getRandomInRage(1, 100));
+console.log(getRandomInRage);
 guessTheNumber();
 
 
