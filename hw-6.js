@@ -21,8 +21,6 @@
 function generateRandomProblem() {
     const operators = ['+', '-', '*', '/'];
 
-    // const num1 = Math.floor(Math.random() * 20) + 1; // Случайное число от 1 до 20
-    // const num2 = Math.floor(Math.random() * 20) + 1; // Случайное число от 1 до 20
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     let answer;
@@ -31,9 +29,7 @@ function generateRandomProblem() {
     let num2;
 
     if (operator === '/') {
-        // Убедимся, что num1 кратен num2
         num2 = Math.floor(Math.random() * 20) + 1; // Случайное число от 1 до 20
-        // Генерируем num1 как кратное num2
         num1 = num2 * (Math.floor(Math.random() * 20) + 1); // num1 кратно num2
         answer = num1 / num2;
         problemStatement = (`${num1} / ${num2} = ?`);
@@ -54,30 +50,70 @@ function generateRandomProblem() {
                 answer = num1 * num2;
                 problemStatement = (`${num1} * ${num2} = ?`);
                 break;
-            // case '/':
-            //     answer = num1 / num2;
-            //     problemStatement = (`${num1} / ${num2} = ?`);
-            //     break;
             default:
                 break;
         }
 
-    }    return { problemStatement, answer };
+    } return { problemStatement, answer };
 }
 
 function startQuiz() {
-        const { problemStatement, answer } = generateRandomProblem();
-        const userAnswer = parseFloat(prompt(problemStatement));
+    const { problemStatement, answer } = generateRandomProblem();
+    const userAnswer = parseFloat(prompt(problemStatement));
 
-        if (userAnswer === answer) {
-            alert("Верно! Угадали.");
-        } else {
-            alert(`Ошибка! Правильный ответ: ${answer}`);
-        }
+    if (userAnswer === answer) {
+        alert("Верно! Угадали.");
+    } else {
+        alert(`Ошибка! Правильный ответ: ${answer}`);
+    }
 
 }
 
 startQuiz();
 
+// Задание 1
+// Дан массив: 
+// [1, 5, 4, 10, 0, 3]
+// .
+
+// Создайте цикл, который будет выводить элементы массива до тех пор, пока не встретит значение 
+// 10
+// . После вывода значения 
+// 10
+//  в консоль цикл должен прекратить свою работу.
+
+const numbers = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] == 10) break;
+    console.log(numbers[i]);
+}
+
+//  Задание 2
+//  Дан массив: 
+//  [1, 5, 4, 10, 0, 3]
+//  .
+
+//  Найдите индекс значения 
+//  4
+//   в этом массиве.
+
+const numb = [1, 5, 4, 10, 0, 3];
+numb.forEach((el, index) => {
+    console.log(`${index}: ${el}`);
+});
+
+//  Задание 3
+// Дан массив чисел:
+// [1, 3, 5, 10, 20]
+// .
+
+// С помощью метода
+// join
+//  выведите элементы массива через пробел (пустую строку
+// ' '
+// ).
+
+const arr = [1, 3, 5, 10, 20];
 
 
