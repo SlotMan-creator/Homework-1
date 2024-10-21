@@ -178,7 +178,7 @@ console.log(data);
 //  «Угадал», в противном случае — «Не угадал».
 
 const values = [9, 8, 7, 6, 5];
-const userNumber = +prompt("ВВедите число от 1 до 10");
+const userNumber = +prompt("Введите число от 1 до 10");
 if (values.includes(userNumber)) {
     alert('Угадал')
 } else {
