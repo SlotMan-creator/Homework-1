@@ -304,6 +304,20 @@ console.log(parityArr);
 
 // Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
 
+function randomNumbers() {
+    return Math.floor(Math.random() * 10);
+}
+
+const block = [];
+
+for (let i = 0; i < 10; i++) {
+    block.push(randomNumbers());
+}
+
+console.log(block);
+console.log(block.reduce((a, b) => a + b) / block.length);
+
+
 
 
 
