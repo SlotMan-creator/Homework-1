@@ -10,7 +10,11 @@
 // Дайте подсказки: больше или меньше загаданное число.
 // Завершите игру, когда пользователь угадает число.
 
-let getRandomInRage = Math.floor(Math.random() * 100) + 1;
+let getRandomInRage;
+function initializeGame() {
+    getRandomInRage = Math.floor(Math.random() * 100) + 1;
+    console.log(`Случайное число: ${getRandomInRage}`);
+}
 
 function guessTheNumber() {
     while (true) {
@@ -41,5 +45,7 @@ function guessTheNumber() {
     }
 }
 
-console.log(getRandomInRage);
-guessTheNumber();
+document.getElementById('startGameOneButton').addEventListener('click', function () {
+    initializeGame();
+    guessTheNumber();
+});
