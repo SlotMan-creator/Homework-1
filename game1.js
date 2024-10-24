@@ -15,6 +15,12 @@ let getRandomInRage = Math.floor(Math.random() * 100) + 1;
 function guessTheNumber() {
     while (true) {
         const number = prompt('Введите число от 1 до 100');
+
+        if (number === null) {
+            alert('Игра отменена.');
+            break;
+        }
+
         let userNumber = Number(number);
 
         if (userNumber < getRandomInRage) {
