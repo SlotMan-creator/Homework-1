@@ -13,13 +13,14 @@ function reverseText() {
     const text = prompt("Введите текст для переворачивания:");
     if (text !== null) {
         const reversed = text.split('').reverse().join('');
-        alert(`Ваш перевернутый текст: ${reversed}`);
+        console.log(`Ваш перевернутый текст: ${reversed}`);
     }
-
+    
     if (text === null) {
-        alert('Игра отменена');
+        console.log('Игра отменена');
         return;
     }
+    
 }
 
 document.getElementById('startGameThreeButton').addEventListener('click', function () {
@@ -110,4 +111,3 @@ function startQuiz() {
 document.getElementById('startGameFourButton').addEventListener('click', function () {
     startQuiz();
 });
-
