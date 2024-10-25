@@ -71,7 +71,7 @@ document.getElementById('startGameThreeButton').addEventListener('click', functi
 // alert()
 // .
 
-function startQuiz() {
+function startPlusQuiz() {
     const quiz = [
         {
             question: "Какой цвет неба?",
@@ -109,5 +109,5 @@ function startQuiz() {
 }
 
 document.getElementById('startGameFourButton').addEventListener('click', function () {
-    startQuiz();
+    startPlusQuiz();
 });
