@@ -65,4 +65,43 @@ document.getElementById('startGameThreeButton').addEventListener('click', functi
 // alert()
 // .
 
+function startQuiz() {
+    const quiz = [
+        {
+            question: "Какой цвет неба?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа (начиная с 1)
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
 
+    let score = 0;
+
+    for (const item of quiz) {
+        const userAnswer = prompt(`${item.question}\n${item.options.join('\n')}`);
+        if (parseInt(userAnswer) === item.correctAnswer) {
+            score++;
+        }
+
+        if (userAnswer === null) {
+            alert('Игра отменена');
+            return;
+        }
+    }
+
+    alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов.`);
+
+}
+
+document.getElementById('startGameFourButton').addEventListener('click', function () {
+    startQuiz();
+});
