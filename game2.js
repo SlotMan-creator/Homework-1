@@ -20,9 +20,6 @@
 
 function generateRandomProblem() {
     const operators = ['+', '-', '*', '/'];
-
-    // const num1 = Math.floor(Math.random() * 20) + 1; // Случайное число от 1 до 20
-    // const num2 = Math.floor(Math.random() * 20) + 1; // Случайное число от 1 до 20
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     let answer;
@@ -54,10 +51,6 @@ function generateRandomProblem() {
                 answer = num1 * num2;
                 problemStatement = (`${num1} * ${num2} = ?`);
                 break;
-            // case '/':
-            //     answer = num1 / num2;
-            //     problemStatement = (`${num1} / ${num2} = ?`);
-            //     break;
             default:
                 break;
         }
@@ -67,9 +60,16 @@ function generateRandomProblem() {
 
 function startQuiz() {
         const { problemStatement, answer } = generateRandomProblem();
-        const userAnswer = parseFloat(prompt(problemStatement));
+        const userAnswer = prompt(problemStatement);
 
-        if (userAnswer === answer) {
+        if (userAnswer === null) {
+            alert("Игра отменена");
+            return;
+        }
+
+        const parsedAnswer = parseFloat(userAnswer);
+
+        if (parsedAnswer === answer) {
             alert("Верно! Угадали.");
         } else {
             alert(`Ошибка! Правильный ответ: ${answer}`);
@@ -77,4 +77,6 @@ function startQuiz() {
 
 }
 
-startQuiz();
+document.getElementById('startGameTwoButton').addEventListener('click', function () {
+    startQuiz();
+})
