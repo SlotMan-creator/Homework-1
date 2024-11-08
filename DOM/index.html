@@ -32,6 +32,8 @@
     <p>Задание 5. Работа с querySelectorAll</p>
     <button class="btn-add">Добавить элемент!</button>
     <p>Задание 6. Добавление нового элемента в DOM</p>
+    <button class="btn-remove">Удалить элемент!</button>
+    <p>Задание 7. Удаление элемента</p>
 </body>
 <script>
     const titleEl = document.querySelector('.title');
@@ -42,6 +44,8 @@
     const allDescriptionEl = document.querySelectorAll('.description');
     const allDescriptionElOne = document.querySelectorAll('.description-one');
     const btnAddEl = document.querySelector('.btn-add');
+    const btnRemoveEl = document.querySelector('.btn-remove');
+    const descriptionFirstEl = document.querySelector('.description');
 
     btnEl.addEventListener('click', function () {
         if (titleEl.style.display === 'none') {
@@ -73,6 +77,10 @@
         const newEl = document.createElement('p');
         newEl.textContent = 'Новый абзац';
         document.body.appendChild(newEl);
+    })
+
+    btnRemoveEl.addEventListener('click', function () {
+        descriptionFirstEl.remove();
     })
 
 </script>
