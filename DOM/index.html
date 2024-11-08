@@ -11,17 +11,25 @@
 <body>
     <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, officia.</h1>
     <button class="btn-title">Удалить текст</button>
+    <p class="text">Lorem ipsum dolor sit amet.</p>
+    <button class="btn-text">Изменить цвет абзаца</button>
 </body>
 <script>
-    const title = document.querySelector('.title');
-    const btn = document.querySelector('.btn-title');
+    const titleEl = document.querySelector('.title');
+    const btnEl = document.querySelector('.btn-title');
+    const textEl = document.querySelector('.text');
+    const btnTextEl = document.querySelector('.btn-text');
 
-    btn.addEventListener('click', function () {
-        if (title.style.display === 'none') {
-            title.style.display = 'block';
+    btnEl.addEventListener('click', function () {
+        if (titleEl.style.display === 'none') {
+            titleEl.style.display = 'block';
         } else {
-            title.style.display = 'none';
+            titleEl.style.display = 'none';
         }
+    })
+
+    btnTextEl.addEventListener('click', function () {
+        textEl.style.color = 'blue';
     })
 </script>
 
