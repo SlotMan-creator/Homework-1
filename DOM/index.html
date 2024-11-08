@@ -12,13 +12,21 @@
     <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, officia.</h1>
     <button class="btn-title">Удалить текст</button>
     <p class="text">Lorem ipsum dolor sit amet.</p>
-    <button class="btn-text">Изменить цвет абзаца</button>
+    <button class="btn-text">Изменить цвет абзаца</button><br>
+    <button class="btn-change">Изменить текст в h1</button>
+    <div class="description">Один</div>
+    <div class="description">два</div>
+    <div class="description">три</div>
+    <div class="description">четыре</div>
+    <div class="description">пять</div>
 </body>
 <script>
     const titleEl = document.querySelector('.title');
     const btnEl = document.querySelector('.btn-title');
     const textEl = document.querySelector('.text');
     const btnTextEl = document.querySelector('.btn-text');
+    const btnChangeEl = document.querySelector('.btn-change');
+    const allDescriptionEl = document.querySelectorAll('.description');
 
     btnEl.addEventListener('click', function () {
         if (titleEl.style.display === 'none') {
@@ -31,6 +39,18 @@
     btnTextEl.addEventListener('click', function () {
         textEl.style.color = 'blue';
     })
+
+    btnChangeEl.addEventListener('click', function () {
+        titleEl.textContent = 'Привет, мир!';
+    })
+
+    allDescriptionEl.forEach(description => {
+        description.textContent = 'Измененный текст';
+    });
+
+    console.log(allDescriptionEl);
+    
+
 </script>
 
 </html>
