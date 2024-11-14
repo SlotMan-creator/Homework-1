@@ -5,7 +5,6 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    transition: background-color 0.5s;
 }
 
 .center {
@@ -21,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom 3px left 63px;
+    transition: background-color 1s;
 
     &__title {
         color: rgb(32, 32, 39);
@@ -80,6 +80,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: left 25px top 77px;
+    transition: background-color 1s;
 
 
     &__title {
@@ -195,6 +196,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right 45px top 93px;
+    transition: background-color 1s;
 
     &__title {
         color: rgb(255, 255, 255);
@@ -298,6 +300,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 1s;
 
     &-title {
         color: rgb(0, 0, 0);
