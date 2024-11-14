@@ -364,4 +364,23 @@ body {
   .footer {
     height: 100px;
   }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding: 40px;
+  }
+  .header__title {
+    font-size: 32px;
+  }
+  .header__text {
+    font-size: 18px;
+  }
+  .header__button {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
