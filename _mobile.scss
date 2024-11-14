@@ -32,6 +32,12 @@
             pointer-events: none;
             margin-top: 36px;
         }
+
+        &__animation {
+            height: 51px;
+            max-width: 425px;
+            min-width: 320px;
+        }
     }
 
     .about-games {

@@ -20,6 +20,7 @@
                 class="header__text-span">«Поехали!»</span> и <span class="header__text-span">приступай.</span></p>
         <button class="header__button">Поехали!</button>
     </header>
+    <div class="header__animation"></div>
     <div class="about-games center">
         <h2 class="about-games__title">Об играх</h2>
         <p class="about-games__text">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них может
@@ -178,6 +179,14 @@
     <!-- <script src="hw-6.js"></script> -->
     <!-- <script src="hw-7.js"></script> -->
     <!-- <script src="hw-8.js"></script> -->
+    <script>
+        let position = 0;
+    
+        setInterval(() => {
+            position -= 1;
+            document.querySelector('.header__animation').style.backgroundPosition = `${position}px 0`;
+        }, 10);
+    </script>
 </body>
 
 </html>

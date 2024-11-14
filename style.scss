@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -70,6 +74,14 @@ body {
             transform: scale(1.1);
             cursor: pointer;
         }
+    }
+
+    &__animation {
+        background-image: url(./img/animation-strip.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        height: 90px;
+        max-width: 3220px;
     }
 }
 
