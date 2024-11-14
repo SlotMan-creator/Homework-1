@@ -50,6 +50,9 @@ body {
   font-weight: 600;
 }
 .header__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   font: inherit;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
@@ -63,6 +66,7 @@ body {
   line-height: 142%;
   text-align: center;
   margin-top: 48px;
+  text-decoration: none;
 }
 .header__button:hover {
   color: rgb(0, 0, 0);
@@ -319,7 +323,7 @@ body {
   }
   .header__animation {
     height: 51px;
-    max-width: auto;
+    max-width: 767px;
     min-width: 320px;
   }
   .about-games {

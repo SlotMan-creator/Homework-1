@@ -53,6 +53,9 @@ body {
     }
 
     &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         font: inherit;
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
@@ -66,6 +69,7 @@ body {
         line-height: 142%;
         text-align: center;
         margin-top: 48px;
+        text-decoration: none;
 
         &:hover {
             color: rgb(0, 0, 0);
