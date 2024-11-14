@@ -18,10 +18,10 @@
         <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
         <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
                 class="header__text-span">«Поехали!»</span> и <span class="header__text-span">приступай.</span></p>
-        <button class="header__button">Поехали!</button>
+        <a href="#about"><button class="header__button">Поехали!</button></a>
     </header>
     <div class="header__animation"></div>
-    <div class="about-games center">
+    <div id="about" class="about-games center">
         <h2 class="about-games__title">Об играх</h2>
         <p class="about-games__text">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них может
             поиграть каждый.
@@ -181,7 +181,7 @@
     <!-- <script src="hw-8.js"></script> -->
     <script>
         let position = 0;
-    
+
         setInterval(() => {
             position -= 1;
             document.querySelector('.header__animation').style.backgroundPosition = `${position}px 0`;

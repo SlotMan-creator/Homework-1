@@ -319,7 +319,7 @@ body {
   }
   .header__animation {
     height: 51px;
-    max-width: 425px;
+    max-width: auto;
     min-width: 320px;
   }
   .about-games {
@@ -363,5 +363,55 @@ body {
   }
   .footer {
     height: 100px;
+  }
+}
+@media (min-width: 426px) and (max-width: 1439px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding: 40px;
+  }
+  .header__title {
+    font-size: 32px;
+  }
+  .header__text {
+    font-size: 18px;
+  }
+  .header__button {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  .about-games {
+    padding: 40px;
+  }
+  .about-games__title {
+    font-size: 32px;
+  }
+  .about-games__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .about-games__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-games__items > article {
+    margin: 10px;
+  }
+  .about-games__card {
+    width: 200px;
+    transition: transform 0.3s;
+  }
+  .about-games__card:hover {
+    transform: scale(1.05);
+  }
+  .about-games__card-img {
+    width: 100%;
+  }
+  .about-games__card-desc {
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
