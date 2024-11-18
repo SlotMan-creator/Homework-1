@@ -75,6 +75,9 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
+.header__button-mob {
+  display: none;
+}
 .header__animation {
   background-image: url(./img/animation-strip.jpg);
   background-repeat: repeat;
@@ -319,6 +322,15 @@ body {
     text-align: center;
   }
   .header__button {
+    display: none;
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    pointer-events: none;
+    margin-top: 36px;
+  }
+  .header__button-mob {
+    display: flex;
     width: 285px;
     height: 55px;
     font-size: 16px;

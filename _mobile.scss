@@ -26,11 +26,21 @@
         }
 
         &__button {
+            display: none;
             width: 285px;
             height: 55px;
             font-size: 16px;
             pointer-events: none;
             margin-top: 36px;
+
+            &-mob {
+                display: flex;
+                width: 285px;
+                height: 55px;
+                font-size: 16px;
+                pointer-events: none;
+                margin-top: 36px;
+            }
         }
 
         &__animation {
