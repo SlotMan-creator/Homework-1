@@ -13,9 +13,9 @@
   }
   .mini-games__card {
     flex-wrap: nowrap;
-    background-color: rgb(171, 241, 241);
+    background-color: rgb(226, 255, 255);
   }
   .mini-games__card-desc {
-    background-color: rgb(177, 243, 243);
+    background-color: rgb(226, 255, 255);
   }
 }/*# sourceMappingURL=tablet.css.map */
