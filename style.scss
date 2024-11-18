@@ -22,7 +22,7 @@ body {
     position: relative;
     background-image: url(./img/BGI_block1.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: bottom 3px left 63px;
     transition: background-color 1s;
 
@@ -98,7 +98,7 @@ body {
     background: rgb(32, 32, 39);
     background-image: url(./img/BGI_block2.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: left 25px top 77px;
     transition: background-color 1s;
 

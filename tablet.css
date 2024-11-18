@@ -1,1 +1,14 @@
-/*# sourceMappingURL=tablet.css.map */
+@media (min-width: 631px) and (max-width: 1211px) {
+  .center {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-games {
+    display: none;
+  }
+}/*# sourceMappingURL=tablet.css.map */
