@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 680px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -26,21 +26,15 @@
         }
 
         &__button {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 285px;
             height: 55px;
             font-size: 16px;
-            pointer-events: none;
             margin-top: 36px;
 
-            &-mob {
-                display: flex;
-                width: 285px;
-                height: 55px;
-                font-size: 16px;
-                pointer-events: none;
-                margin-top: 36px;
-            }
         }
 
         &__animation {

@@ -52,7 +52,8 @@ body {
 .header__button {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   font: inherit;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
@@ -74,9 +75,6 @@ body {
   transition: all 1.3s;
   transform: scale(1.1);
   cursor: pointer;
-}
-.header__button-mob {
-  display: none;
 }
 .header__animation {
   background-image: url(./img/animation-strip.jpg);
@@ -297,7 +295,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 680px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -322,19 +320,13 @@ body {
     text-align: center;
   }
   .header__button {
-    display: none;
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-    pointer-events: none;
-    margin-top: 36px;
-  }
-  .header__button-mob {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 285px;
     height: 55px;
     font-size: 16px;
-    pointer-events: none;
     margin-top: 36px;
   }
   .header__animation {
@@ -385,7 +377,7 @@ body {
     height: 100px;
   }
 }
-@media (min-width: 631px) and (max-width: 1211px) {
+@media (min-width: 632px) and (max-width: 1211px) {
   .center {
     padding-left: 32px;
     padding-right: 32px;
@@ -397,5 +389,12 @@ body {
   }
   .about-games {
     display: none;
+  }
+  .mini-games__card {
+    flex-wrap: nowrap;
+    background-color: rgb(171, 241, 241);
+  }
+  .mini-games__card-desc {
+    background-color: rgb(177, 243, 243);
   }
 }/*# sourceMappingURL=style.css.map */

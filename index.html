@@ -18,11 +18,10 @@
         <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
         <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
                 class="header__text-span">«Поехали!»</span> и <span class="header__text-span">приступай.</span></p>
-        <a class="header__button" href="#mini-games">Поехали!</a>
-        <!-- <a class="header__button header__button-mob" href="#mini-games">Поехали!</a> -->
+        <button class="header__button">Поехали!</button>
     </header>
     <div class="header__animation"></div>
-    <div id="about" class="about-games center">
+    <div class="about-games center">
         <h2 class="about-games__title">Об играх</h2>
         <p class="about-games__text">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них может
             поиграть каждый.
@@ -34,7 +33,7 @@
                     <article class="about-games__card-one about-games__card">
                         <img class="about-games__card-img" src="./img/Обложка_карточки1.svg" alt="cover1">
                         <div class="about-games__card-desc">
-                            <h3>3 class="about-games__card-desc-number">Игра № 1</h3>
+                            <h3 class="about-games__card-desc-number">Игра № 1</h3>
                             <h4 class="about-games__card-desc-title">Угадай число</h4>
                         </div>
                     </article>
@@ -91,9 +90,9 @@
             </article>
         </section>
     </div>
-    <section id="mini-games" class="mini-games center">
+    <section class="mini-games center">
         <h3 class="mini-games__title">Мини-игры</h3>
-        <section  class="mini-games__items">
+        <section class="mini-games__items">
             <article id="card-one" class="mini-games__card mini-games__card-one">
                 <div class="mini-games__card-img-wrapper">
                     <img class="mini-games__card-img" src="./img/Обложка_карточки_1(block3).svg" alt="cover1">
@@ -199,6 +198,21 @@
             position -= 1;
             document.querySelector('.header__animation').style.backgroundPosition = `${position}px 0`;
         }, 10);
+
+        const buttonEl = document.querySelector('.header__button');
+        const miniGamesEL = document.querySelector('.mini-games');
+        const aboutGamesEL = document.querySelector('.about-games');
+        buttonEl.addEventListener('click', function () {
+            if (window.innerWidth <= 1210) {
+                miniGamesEL.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            } else {
+                aboutGamesEL.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
     </script>
 </body>
 

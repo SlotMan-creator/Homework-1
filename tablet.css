@@ -1,4 +1,4 @@
-@media (min-width: 631px) and (max-width: 1211px) {
+@media (min-width: 632px) and (max-width: 1211px) {
   .center {
     padding-left: 32px;
     padding-right: 32px;
@@ -10,5 +10,12 @@
   }
   .about-games {
     display: none;
+  }
+  .mini-games__card {
+    flex-wrap: nowrap;
+    background-color: rgb(171, 241, 241);
+  }
+  .mini-games__card-desc {
+    background-color: rgb(177, 243, 243);
   }
 }/*# sourceMappingURL=tablet.css.map */
