@@ -305,6 +305,11 @@ body {
                     transition: all 1.3s;
                     cursor: pointer;
                 }
+
+                &-wrapper {
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
     }
