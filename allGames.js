@@ -149,11 +149,11 @@ function reverseText() {
     const text = prompt("Введите текст для переворачивания:");
     if (text !== null) {
         const reversed = text.split('').reverse().join('');
-        console.log(`Ваш перевернутый текст: ${reversed}`);
+        alert(`Ваш перевернутый текст: ${reversed}`);
     }
 
     if (text === null) {
-        console.log('Игра отменена');
+        alert('Игра alert')
         return;
     }
 
@@ -303,23 +303,23 @@ function playGame() {
     const userChoiceLower = userChoice.toLowerCase();
 
     if (!choices.includes(userChoiceLower)) {
-        console.log("Некорректный выбор. Пожалуйста, выберите камень, ножницы или бумагу.");
+        alert("Некорректный выбор. Пожалуйста, выберите камень, ножницы или бумагу.");
         return;
     }
 
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    console.log(`Выбор компьютера: ${computerChoice}`);
+    alert(`Выбор компьютера: ${computerChoice}`);
 
     if (userChoiceLower === computerChoice) {
-        console.log("Ничья!");
+        alert("Ничья!");
     } else if (
         (userChoiceLower === "камень" && computerChoice === "ножницы") ||
         (userChoiceLower === "ножницы" && computerChoice === "бумага") ||
         (userChoiceLower === "бумага" && computerChoice === "камень")
     ) {
-        console.log("Вы победили!");
+        alert("Вы победили!");
     } else {
-        console.log("Вы проиграли!");
+        alert("Вы проиграли!");
     }
 }
 
