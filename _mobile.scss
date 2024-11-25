@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -26,16 +26,20 @@
         }
 
         &__button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 285px;
             height: 55px;
             font-size: 16px;
-            pointer-events: none;
             margin-top: 36px;
+
         }
 
         &__animation {
             height: 51px;
-            max-width: 425px;
+            max-width: 767px;
             min-width: 320px;
         }
     }
@@ -88,4 +92,26 @@
         height: 100px;
     }
 
+}
+
+@media (min-width: 426px) and (max-width: 800px) {
+    .mini-games {
+        &__card {
+            &-desc {
+                &-title {
+                    font-size: 40px;
+                    line-height: 39px;
+                }
+                &-text {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+                &-btn {
+                    width: 232px;
+                    height: 48px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }

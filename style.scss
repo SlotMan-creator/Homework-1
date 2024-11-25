@@ -4,7 +4,7 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
     position: relative;
     background-image: url(./img/BGI_block1.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: bottom 3px left 63px;
     transition: background-color 1s;
 
@@ -53,6 +53,10 @@ body {
     }
 
     &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font: inherit;
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
@@ -66,6 +70,7 @@ body {
         line-height: 142%;
         text-align: center;
         margin-top: 48px;
+        text-decoration: none;
 
         &:hover {
             color: rgb(0, 0, 0);
@@ -74,6 +79,7 @@ body {
             transform: scale(1.1);
             cursor: pointer;
         }
+
     }
 
     &__animation {
@@ -81,7 +87,7 @@ body {
         background-repeat: repeat;
         background-size: cover;
         height: 90px;
-        max-width: 3220px;
+        max-width: 100%;
     }
 }
 
@@ -90,7 +96,7 @@ body {
     background: rgb(32, 32, 39);
     background-image: url(./img/BGI_block2.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: left 25px top 77px;
     transition: background-color 1s;
 
@@ -300,6 +306,11 @@ body {
                     color: rgb(0, 0, 0);
                     transition: all 1.3s;
                     cursor: pointer;
+                }
+
+                &-wrapper {
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
